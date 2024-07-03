@@ -1,0 +1,13 @@
+//normal way
+System.setProperty("WebDriver.ChromeDriver","chrome driver path");
+WebDriver driver = new ChromerDriver();
+driver.manage().window().maximize();
+driver.manage()/deleteAllCookies();
+driver.get();
+
+//browser launch using WebDriverManager
+WebDriverManager.chromeDriver().setup();
+WebDriver driver = new ChromerDriver();
+driver.manage().window().maximize();
+driver.manage()/deleteAllCookies();
+driver.get();

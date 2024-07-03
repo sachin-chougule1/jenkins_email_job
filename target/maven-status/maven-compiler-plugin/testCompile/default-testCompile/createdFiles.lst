@@ -1,0 +1,4 @@
+runner\HomePageRunner.class
+stepsClasse\HomePageSteps.class
+appHook\AppHookAmazon.class
+runner\HomePageRunnerTest.class
