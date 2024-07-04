@@ -8,8 +8,8 @@ import io.cucumber.testng.CucumberOptions;
 		
 		glue= {"stepsClasse","appHook"},
 		publish= true,
-		plugin= {"pretty"}
-//		plugin= {"pretty","html:target/cucumber-report/failed.html"}
+//		plugin= {"pretty"},
+		plugin= {"pretty","html:target/cucumber-report/failed.html"}
 		
 //		features= {"@target/failedfrom.txt"},    //to run failed scenario only neew rerun plugin
 //		plugin= {"pretty","rerun:target/failedfrom.txt"}
