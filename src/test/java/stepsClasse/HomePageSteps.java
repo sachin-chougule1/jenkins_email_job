@@ -17,7 +17,7 @@ public class HomePageSteps {
 	public void user_is_at_landing_page() {
 		WebDriver driver = DriverFactory.getDriver();
 		driver.get("https://www.amazon.in/");
-		System.out.println("broweser launched and url");
+		System.out.println("broweser launched and url also");
 	    
 	}
 
