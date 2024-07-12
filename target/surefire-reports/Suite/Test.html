@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Jul 09 21:03:59 IST 2024</td>
+<td>Started on:</td><td>Fri Jul 12 22:02:20 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>12 seconds (12029 ms)</td>
+<tr><td>Total time:</td><td>16 seconds (16707 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,6 +76,22 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
+<td title='runner.HomePageRunner.runScenario()'><b>runScenario</b><br>Test class: runner.HomePageRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "validate title", "HomePage Functionality"</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at stepsClasse.HomePageSteps.page_title_should_contain_the(HomePageSteps.java:28)
+	at ✽.Page title  should contain the &quot;Shopping&quot;(file:///C:/Att/Amazon/src/test/resources/steps/HomePage.feature:5)
+... Removed 4 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1342198213", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1342198213'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1577)
+	at org.testng.Assert.assertTrue(Assert.java:56)
+	at org.testng.Assert.assertTrue(Assert.java:66)
+	at stepsClasse.HomePageSteps.page_title_should_contain_the(HomePageSteps.java:28)
+	at ✽.Page title  should contain the &quot;Shopping&quot;(file:///C:/Att/Amazon/src/test/resources/steps/HomePage.feature:5)
+</pre></div></td>
+<td>7</td>
+<td>runner.HomePageRunner@c8c12ac</td></tr>
+<tr>
 <td title='runner.HomePageRunner.runScenario()'><b>runScenario</b><br>Test class: runner.HomePageRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "verify the cart icon", "HomePage Functionality"</td>
 <td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebElement.isDisplayed()&quot; because &quot;element&quot; is null
 	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
@@ -84,34 +100,20 @@ function toggleAllBoxes() {
 	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:205)
 	at pages.HomePage.verifyCartIcon(HomePage.java:67)
-	at stepsClasse.HomePageSteps.cart_icon_should_get_displayed(HomePageSteps.java:33)
+	at stepsClasse.HomePageSteps.cart_icon_should_get_displayed(HomePageSteps.java:34)
 	at ✽.Cart icon should get displayed(file:///C:/Att/Amazon/src/test/resources/steps/HomePage.feature:9)
-</pre></div><a href='#' onClick='toggleBox("stack-trace994712181", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace994712181'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebElement.isDisplayed()&quot; because &quot;element&quot; is null
+</pre></div><a href='#' onClick='toggleBox("stack-trace409832049", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace409832049'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebElement.isDisplayed()&quot; because &quot;element&quot; is null
 	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
 	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:37)
 	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
 	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:205)
 	at pages.HomePage.verifyCartIcon(HomePage.java:67)
-	at stepsClasse.HomePageSteps.cart_icon_should_get_displayed(HomePageSteps.java:33)
+	at stepsClasse.HomePageSteps.cart_icon_should_get_displayed(HomePageSteps.java:34)
 	at ✽.Cart icon should get displayed(file:///C:/Att/Amazon/src/test/resources/steps/HomePage.feature:9)
 </pre></div></td>
-<td>3</td>
-<td>runner.HomePageRunner@c8c12ac</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td><b>Attribute(s)</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='runner.HomePageRunner.runScenario()'><b>runScenario</b><br>Test class: runner.HomePageRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "validate title", "HomePage Functionality"</td>
-<td></td>
-<td>3</td>
+<td>5</td>
 <td>runner.HomePageRunner@c8c12ac</td></tr>
 </table><p>
 </body>

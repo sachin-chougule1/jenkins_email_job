@@ -1,8 +1,17 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 12.53 s <<< FAILURE! -- in TestSuite
-runner.HomePageRunner.runScenario["verify the cart icon", "HomePage Functionality"](2) -- Time elapsed: 3.498 s <<< FAILURE!
+Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 17.22 s <<< FAILURE! -- in TestSuite
+runner.HomePageRunner.runScenario["validate title", "HomePage Functionality"](1) -- Time elapsed: 7.970 s <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1577)
+	at org.testng.Assert.assertTrue(Assert.java:56)
+	at org.testng.Assert.assertTrue(Assert.java:66)
+	at stepsClasse.HomePageSteps.page_title_should_contain_the(HomePageSteps.java:28)
+	at ✽.Page title  should contain the "Shopping"(file:///C:/Att/Amazon/src/test/resources/steps/HomePage.feature:5)
+
+runner.HomePageRunner.runScenario["verify the cart icon", "HomePage Functionality"](2) -- Time elapsed: 5.404 s <<< FAILURE!
 java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebElement.isDisplayed()" because "element" is null
 	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
 	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:37)
@@ -10,6 +19,6 @@ java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebElement.is
 	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:205)
 	at pages.HomePage.verifyCartIcon(HomePage.java:67)
-	at stepsClasse.HomePageSteps.cart_icon_should_get_displayed(HomePageSteps.java:33)
+	at stepsClasse.HomePageSteps.cart_icon_should_get_displayed(HomePageSteps.java:34)
 	at ✽.Cart icon should get displayed(file:///C:/Att/Amazon/src/test/resources/steps/HomePage.feature:9)
 
